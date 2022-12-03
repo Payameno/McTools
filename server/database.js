@@ -1,4 +1,4 @@
-//psql connection config
+//Connecting to psql database
 require('dotenv').config();
 const pg = require('pg');
 const Pool = pg.Pool;
