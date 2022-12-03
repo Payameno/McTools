@@ -26,6 +26,7 @@ CREATE TABLE products (
   quantity INTEGER NOT NULL,
   price_cents INTEGER NOT NULL,
   category VARCHAR(50) NOT NULL,
+  instock BOOLEAN NOT NULL DEFAULT false,
   added_date DATE NOT NULL DEFAULT CURRENT_DATE
 );
 
@@ -37,6 +38,5 @@ CREATE TABLE order_items (
 CREATE TABLE product_pictures (
   picture_id SERIAL PRIMARY KEY NOT NULL,
   product_id INTEGER REFERENCES products (id) ON DELETE CASCADE,
-  url VARCHAR(2048) NOT NULL,
-  is_thumbnail BOOLEAN NOT NULL DEFAULT false
+  url VARCHAR(2048) NOT NULL
 );
