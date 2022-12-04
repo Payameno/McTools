@@ -15,7 +15,11 @@ const Product = (props) => {
           </div>
 
           <div className="product-title">{name}</div>
-          <div className="product-color">Color: {color}</div>
+          <div className="product-description">{description}</div>
+          <div className="product-brand">{brand}</div>
+          <div className="product-quantity">{quantity}</div>
+          <div className="product-category">{category}</div>
+          <div className="product-instock">{instock}</div>
           <div className="product-price">C ${price / 100}</div>
         </Link>
       </section>

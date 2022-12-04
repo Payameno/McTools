@@ -299,15 +299,6 @@ footer .footer-content p {
   text-align: center;
 }
 
-.product-list .link .product-color {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 800;
-  font-size: 1rem;
-  color: #333;
-  padding: 8px 0px 8px 0px;
-  text-align: center;
-}
-
 .product-list .link .product-price {
   padding-bottom: 9px;
   text-align: center;
@@ -511,7 +502,7 @@ footer .footer-content p {
   font-size: 1.25rem;
 }
 
-.product-info .product-detail-info .product-detail-color {
+.product-info .product-detail-info {
   margin: 20px;
   background-color: #f6f1e8;
   font-size: 1rem;
@@ -521,8 +512,8 @@ footer .footer-content p {
   display: flex;
 }
 
-.product-info .product-detail-info .product-detail-color p,
-.product-info .product-detail-info .product-detail-color b {
+.product-info .product-detail-info p,
+.product-info .product-detail-info b {
   background-color: #f6f1e8;
   padding-right: 10px;
 }
