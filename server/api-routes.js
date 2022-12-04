@@ -16,7 +16,7 @@ router.get("/machinery", (req, res) => {
       products.price_cents,
       products.category,
       products.instock,
-      product_pictures.url AS picture_url
+      ARRAY_AGG(product_pictures.url) AS pictures_url
     FROM products
     INNER JOIN product_pictures
       ON products.id = product_pictures.product_id
@@ -45,7 +45,7 @@ router.get("/inspection", (req, res) => {
       products.price_cents,
       products.category,
       products.instock,
-      product_pictures.url AS picture_url
+      ARRAY_AGG(product_pictures.url) AS pictures_url
     FROM products
     INNER JOIN product_pictures
       ON products.id = product_pictures.product_id
@@ -74,7 +74,7 @@ router.get("/handtools", (req, res) => {
       products.price_cents,
       products.category,
       products.instock,
-      product_pictures.url AS picture_url
+      ARRAY_AGG(product_pictures.url) AS pictures_url
     FROM products
     INNER JOIN product_pictures
       ON products.id = product_pictures.product_id
@@ -103,7 +103,7 @@ router.get("/all-products", (req, res) => {
       products.price_cents,
       products.category,
       products.instock,
-      product_pictures.url AS picture_url
+      ARRAY_AGG(product_pictures.url) AS pictures_url
     FROM products
     INNER JOIN product_pictures
       ON products.id = product_pictures.product_id
