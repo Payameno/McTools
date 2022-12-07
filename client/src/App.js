@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './style/App.css';
 import LandingPage from './components/LandingPage';
 import Footer from './components/Footer';
 import { Routes, Route, Link } from 'react-router-dom'
@@ -10,6 +9,7 @@ import Machinery from './components/Machinery';
 import Login from './components/Login';
 import Register from './components/Register';
 import ProductDetail from './components/ProductDetail';
+import './style/App.css';
 
 function App() {
   const [machinery, setMachinery] = useState({});
